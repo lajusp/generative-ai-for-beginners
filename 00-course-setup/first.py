@@ -23,3 +23,14 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message.content)
+
+
+completion = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are an expert python programmer, skilled in authoring clean, self documenting code."},
+    {"role": "user", "content": "Write a python function to sum two numbers a and b."}
+  ]
+)
+
+print(completion.choices[0].message.content)
