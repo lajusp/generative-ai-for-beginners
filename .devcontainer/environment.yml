@@ -1,0 +1,10 @@
+name: gai4beg
+channels:  
+ - defaults
+dependencies:  
+- python=3.8.12  
+- openai  
+- python-dotenv  
+- ipykernel=6.4.1
+- ipython=7.27.0
+- ipywidgets=7.6.5
